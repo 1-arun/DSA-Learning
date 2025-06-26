@@ -106,8 +106,29 @@ function reverseNumber(n) {
     return rev;
 }
 let result = reverseNumber(52)
-console.log(result)
+// console.log(result)
+
+// same as above problem
+
+function reverseNum(n) {
+    let rev = 0
+    while(n > 0) {
+        let digit = n % 10
+        rev = rev *  10 + digit
+        n = Math.floor(n / 10)
+    }
+    return rev
+}
+
+let resulta = reverseNum(1234500)
+// console.log("this is our result",resulta)
 
 
-
+// count digits 
+    
+function count(n) {
+  let  n = Math.abs(n)
+    return n
+}
+console.log(count(-123))
 
